@@ -13,7 +13,7 @@ section.military {
 	width: 100vw;
 	padding: 5%;
 	min-height: 400px;
-	background: center no-repeat url('/public/assets/bg.webp');
+	background: center no-repeat url('../../public/assets/bg.webp');
 	background-size: cover;
 }
 
