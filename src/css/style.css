@@ -34,7 +34,7 @@ section.military {
 .military_header {
 	display: flex;
 	gap: 16px;
-	flex-wrap: wrap;
+	text-align: center;
 }
 
 .military_buttons {
@@ -48,13 +48,15 @@ section.military {
 		font-size: 11px;
 	}
 }
-
+@media (width <= 600px) {
+	.military_header {
+		flex-wrap: wrap;
+		text-align: left;
+	}
+}
 @media (width >= 768px) {
 	body {
 		font-size: 13px;
-	}
-	.military_header {
-		flex-wrap: nowrap;
 	}
 }
 
