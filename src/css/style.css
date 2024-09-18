@@ -23,18 +23,18 @@ section.military {
 	margin: 0px auto;
 	background-color: white;
 	border-radius: 8px;
-	border: #646cff 4px solid;
 }
 .military_container {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	max-width: 730px;
+	max-width: 650px;
 }
 .military_header {
 	display: flex;
 	gap: 16px;
-	text-align: center;
+	justify-items: center;
+	align-items: center;
 }
 
 .military_buttons {
@@ -48,10 +48,15 @@ section.military {
 		font-size: 11px;
 	}
 }
-@media (width <= 600px) {
-	.military_header {
-		flex-wrap: wrap;
-		text-align: left;
+@media (width <= 480px) {
+	.military * {
+		gap: 0.5rem;
+	}
+	.content {
+		padding: 10% 5%;
+	}
+	body {
+		font-size: 9px;
 	}
 }
 @media (width >= 768px) {
@@ -90,13 +95,4 @@ button:hover {
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
-}
-.red {
-	background-color: red;
-}
-.green {
-	background-color: green;
-}
-.violet {
-	background-color: rgb(100, 58, 216);
 }
